@@ -91,15 +91,15 @@ int main()
 	{
 		for(int j = 0 ; j < 10 ; j++)
 		{
-			a_2d[i][j] = rand()%10;
-			b_2d[i][j] = rand()%10;
+			a_2d[i][j] = rand()%10000;
+			b_2d[i][j] = rand()%10000;
 		}
 	}
 	for(int i = 0 ; i<10 ;i++)
 	{
-		a_1d[i] = rand()%10;
-		b_1d[i] = rand()%10;
-		vector[i][1] = rand()%10;
+		a_1d[i] = rand()%10000;
+		b_1d[i] = rand()%10000;
+		vector[i][1] = rand()%10000;
 	}
 	cout<<"\n1st input matrix"<<endl ; 
 		disp2d(a_2d ,10,10);
