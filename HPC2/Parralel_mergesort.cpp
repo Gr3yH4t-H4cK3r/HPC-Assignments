@@ -18,13 +18,13 @@ void mergesort(int * a , int low , int high)
 }
 void merge(int* a , int low , int high)
 {
-	int temp[100];
+	int temp[high-low+1];
 	int mid = ((low+high)/2); 
 	int i = low , j = mid  ;
 	int index = 0 ; 
 	while(i < mid && j < high)
 	{
-		if(a[i] > a[j])
+		if(a[i] >= a[j])
 		{
 			temp[index] = a[j];	
 			j++;
