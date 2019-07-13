@@ -22,9 +22,9 @@ void merge(int* a , int low , int high)
 	int mid = ((low+high)/2); 
 	int i = low , j = mid  ;
 	int index = 0 ; 
-	while(i < mid && j < high)
+	while(i <= mid && j <= high)
 	{
-		if(a[i] >= a[j])
+		if(a[i] > a[j])
 		{
 			temp[index] = a[j];	
 			j++;
@@ -51,11 +51,11 @@ void merge(int* a , int low , int high)
 		temp[index] = a[j];
 		j++ , index++;
 	}
-	int f = 0;
+	
 	for(int k = low ; k < high ; k++)
 	{
-		a[k] = temp[f];
-		f++;
+		a[k] = temp[k-low];
+		//f++;
 		
 	}
 	/*for(int f = 0 ; f < index ; f++)
