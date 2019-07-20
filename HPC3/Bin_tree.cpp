@@ -24,7 +24,7 @@ class node
 	}*/
 
 };
-class tree
+class tree 
 {	public:
 	node *head ; 
 	
@@ -42,32 +42,7 @@ void tree :: BFS(node* root)
 {
 	queue.push_back(root);
 	node *temp ; 
-	//vector<node*>::iterator it;
-	//it = queue.begin();
-	/*while(1)
-	{
-		while(!queue.empty())
-		{
-			temp = queue.front();
-			queue.erase(it);
-			cout<<temp->n<< " ";
-			it++;
-		}
-	//	it++;
-		if(temp->left!=NULL)
-		{
-			queue.push_back(temp->left);
-		}
-		if(temp->right!=NULL)
-		{
-			queue.push_back(temp->right);
-		}
-		if(queue.empty())
-		{
-			break;
-		}
-		
-	}	*/
+	int nodes_level = 0;
 	
 	while(!queue.empty())
 	{	//cout<<"in function"<<endl;
@@ -77,7 +52,7 @@ void tree :: BFS(node* root)
 		//cout<<"erasing first element"<<endl ; 
 		
 		
-			cout<<temp->n<< " ";
+		cout<<temp->n<< " ";
 		//it++;
 		
 		#pragma omp parallel sections

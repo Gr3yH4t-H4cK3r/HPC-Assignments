@@ -1,0 +1,6 @@
+#include<iostream>
+#include<math.h>
+int main()
+{
+	cout<<pow(5,2);
+}
